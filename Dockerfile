@@ -8,7 +8,7 @@ RUN npm install -g pnpm@10.3.0
 
 # Copy package files & patches directory (if exists)
 COPY package.json pnpm-lock.yaml turbo.json ./
-COPY patches ./patches  # Ensure patches are included
+COPY patches ./patches  
 
 # Copy monorepo structure
 COPY packages ./packages
